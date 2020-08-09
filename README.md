@@ -13,4 +13,5 @@ The validation of the studied fractional-order model using real COVID-19  data  
 Fractional-order epidemiological models might play an important role in understanding and predicting the spread of the COVID-19, also providing relevant guidelines for controlling the pandemic.
 # Note
 Here we present the code for the validation of the Nouvelle-Aquitaine-France region pandemic spreading. Some functions in this code have been adopted from [1].
+
 [1]: E.  Cheynet,  “Generalized  seir  epidemic  model  (fitting  and  computa-tion)(https://www.github.com/echeynet/seir),  github,”Retrieved  April,vol. 6, p. 2020, 2020
