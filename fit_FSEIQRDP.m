@@ -7,24 +7,18 @@ p.addOptional('tolFun',1e-4);
 p.addOptional('Display','iter'); 
 p.addOptional('dt',0.1);
 p.parse(varargin{:});
-%%%%%%%%%%%%%%%%%%%%%%%%%%
 tolX = p.Results.tolX ;
 tolFun = p.Results.tolFun ;
 Display  = p.Results.Display ;
 dt  = p.Results.dt ;
-%% Options for lsqcurvfit
 options=optimset('TolX',tolX,'TolFun',tolFun,'MaxFunEvals',800,'Display',Display);
-%% Fitting the data
 input = [Q;R;D];
 time = time';
 fs = 1./dt;
 tTarget = round(datenum(time-time(1))*fs)/fs; 
 t = tTarget(1):dt:tTarget(end);
 modelFun1 = @FSEIQRDP_fitting; 
-
-% call Lsqcurvefit
 [Coeff] = lsqcurvefit(@(para,t) modelFun1(para,t),guess,tTarget(:)',input,zeros(1,numel(guess)),[1 3 1 1 2 3 2 2],options);
-%% Write the fitted coeff in the outputs
 alpha1 = abs(Coeff(1));
 beta1 = abs(Coeff(2));
 gamma1 = abs(Coeff(3));
@@ -43,7 +37,6 @@ q1 = abs(Coeff(9:15));
         kappa0 = abs(para(7:8));
         kappa = kappa0(1)*exp(-kappa0(2).*t);
         q=abs(para(9:15));
-%% Initial conditions
 N = numel(t);
 Ef(1)=E0;
 If(1)=I0;
