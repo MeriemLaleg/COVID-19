@@ -1,4 +1,7 @@
 # Abstract: Fractional-order-SEIQRDP-Model-for-Simulating-the-Dynamics-of-COVID-19-Epidemic
+Mohamed A. Bahloul, Member, IEEE, Abderrazak Chahid, Member, IEEE,and Taous-MeriemLaleg-Kirati, Associate Member, IEEE
+
+Estimation, Modeling and Analysis Group, Computer,  Electrical  and  Mathematical  Sciences  and  Engineering Division, King Abdullah University of Science and Technology
 
 # Goal: 
 Coronavirus disease (COVID-19)  is  a  contagious   disease   caused   by   a   newly   discovered   coronavirus, initially   identified   in   the   mainland   of  China,   late   December2019.   COVID-19   has   been   confirmed   as   a   higher   infectious disease   that   can   spread   quickly   in   a   community population depending on  the  number  of  susceptible  and  infected  cases  and also   depending   on   their   movement   in   the   community.   Since January  2020,  COVID-19  has  reached  out  to  many  countries worldwide,  and  the  number  of  daily  cases  remains  to  increase rapidly. 
